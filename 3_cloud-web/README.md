@@ -4,6 +4,7 @@ Strona WWW z wizualizacją online danych z czujników oraz możliwością genero
 
 Wykorzystywane technologie:
 * Bootstrap
+* jQuery/Ajax
 * Laravel PHP Framework
-* Angular2
+
 

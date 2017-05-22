@@ -1,0 +1,17 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "../../../vendor/twbs/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+.panel-body{
+  h3,p{
+    font-weight: bold;
+    span{ font-weight: normal; }
+  }
+}
