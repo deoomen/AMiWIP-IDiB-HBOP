@@ -18,7 +18,11 @@ Route::get('/', function () {
 //Route::post("login", "LoginController@login");
 
 Route::group(["prefix" => "panel"], function(){
-    Route::get('dashboard', 'DashboardController@index')->name('dashboard');
+    Route::get('dashboard', 'DashboardController@index')
+        ->name('dashboard');
+    Route::get('report/{sensorID}', 'DashboardController@report')
+        ->name('report')
+        ->where("sensorID", "[0-9]+");
 });
 
 Auth::routes();

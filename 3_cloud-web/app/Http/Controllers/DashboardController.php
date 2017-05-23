@@ -25,4 +25,12 @@ class DashboardController extends Controller
     {
         return view('panel/dashboard');
     }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function report($sensorID)
+    {
+        return view("panel/report", ["sensorID" => $sensorID]);
+    }
 }

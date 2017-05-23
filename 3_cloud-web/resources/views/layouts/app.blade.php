@@ -34,7 +34,7 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
+                    <a class="navbar-brand" href="{{ url('/panel/dashboard') }}">
                         {{ config('app.name', 'Laravel') }}
                     </a>
                 </div>
@@ -42,7 +42,7 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        <li><a href="/">asd</a></li>
+                        {{--<li><a href="/">asd</a></li>--}}
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -84,10 +84,12 @@
     <script src="{{ asset('js/highcharts.js') }}"></script>
 
     <script>
-        let TSChannelID = "<?=env("TS_CHANNEL_ID") ?>",
-            TSReadAPIKey = "<?=env("TS_READ_API_KEY")?>",
-            TSLastsFeeds = "<?=env("TS_LASTS_FEEDS")?>";
+        let TSChannelID = "{{ env("TS_CHANNEL_ID") }}",
+            TSReadAPIKey = "{{ env("TS_READ_API_KEY") }}",
+            TSLastsFeeds = "{{ env("TS_LASTS_FEEDS") }}";
     </script>
     <script src="{{ asset('js/myscripts.js') }}"></script>
+
+    @yield("scripts")
 </body>
 </html>
