@@ -6,5 +6,5 @@ Wykorzystywane technologie:
 * Bootstrap
 * jQuery/Ajax
 * Laravel PHP Framework
-
+* Highcharts.js
 
