@@ -8,10 +8,8 @@ The rest of the documentation will be in Polish.
 
 ### Główne założenia projektowe:
 
-* Zdalny odczyt parametrów powietrza: (temperatura, wilgotność, ciśnienie) wewnątrz pomieszczeń i na zewnątrz budynku.
-* Nettemp (http://techfreak.pl/nettemp) - moduły laboratoryjne.
-* Protokół komunikacji bezprzewodowej między czujnikami a stacją bazową.
-* Lokalny dostęp do bazy danych pomiarowych.
-* Zdalny dostęp do bazy danych pomiarowych (chmura?).
-* Aplikacja wizualizacji danych pomiarowych (SQL, WWW z możliwością wyboru trendu).
+* zdalny odczyt parametrów powietrza: (temperatura, wilgotność, ciśnienie itp) wewnątrz pomieszczeń i na zewnątrz budynku
+* protokół komunikacji bezprzewodowej między czujnikami a chmurą
+* zdalny dostęp do bazy danych pomiarowych (chmura)
+* aplikacja wizualizacji danych pomiarowych (WWW z możliwością wyboru trendu)
 
